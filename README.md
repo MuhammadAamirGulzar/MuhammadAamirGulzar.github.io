@@ -13,5 +13,4 @@ Point it at the live booking backend's `/book` URL once that's deployed.
 ## CV
 
 `assets/Aamir_Gulzar_CV.pdf` is compiled from the LaTeX source in the
-`MuhammadAamirGulzar/Aamir_Gulzar_AI_Engineer_CV` repo. Recompile and copy it here
-whenever the CV changes.
+`MuhammadAamirGulzar/cv` repo. Recompile and copy it here whenever the CV changes.
