@@ -99,21 +99,15 @@ const html = `<!doctype html>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <div class="nav-right">
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#journey">Journey</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#publications">Research</a></li>
-        <li><a href="#stack">Stack</a></li>
-        <li><a class="nav-cta" href="#book">Book a meeting</a></li>
-      </ul>
-      <div class="lens-toggle" role="group" aria-label="Reading as">
-        <button class="lens-btn" id="lensRecruiter" type="button" aria-pressed="true">Recruiter</button>
-        <button class="lens-btn" id="lensResearcher" type="button" aria-pressed="false">Researcher</button>
-      </div>
-    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Research</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a class="nav-cta" href="#book">Book a meeting</a></li>
+    </ul>
   </nav>
 </header>
 
@@ -123,7 +117,7 @@ const html = `<!doctype html>
     <div class="hero-inner">
       <p class="eyebrow">${esc(profile.eyebrow)}</p>
       <h1>${esc(profile.name)}</h1>
-      <p class="hero-lede" id="heroLede" data-recruiter="${esc(profile.heroLede)}" data-researcher="${esc(profile.heroLedeResearch)}">${esc(profile.heroLede)}</p>
+      <p class="hero-lede">${esc(profile.heroLede)}</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#book">Book a meeting</a>
         <a class="btn btn-ghost" href="#projects">View projects</a>

@@ -113,42 +113,6 @@ img { max-width: 100%; }
   border-radius: 2px;
 }
 
-/* ---------- Nav right group / Lens toggle ---------- */
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 4px;
-}
-
-.lens-toggle {
-  display: flex;
-  gap: 2px;
-  padding: 3px;
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  margin-left: 14px;
-}
-
-.lens-btn {
-  border: none;
-  background: transparent;
-  color: var(--text-muted);
-  font-size: 0.82rem;
-  font-weight: 600;
-  padding: 6px 13px;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease;
-}
-
-.lens-btn[aria-pressed="true"] {
-  background: var(--accent);
-  color: var(--accent-text);
-}
-
 /* ---------- Hero ---------- */
 
 .hero {
@@ -225,20 +189,6 @@ img { max-width: 100%; }
 .btn-large { padding: 15px 30px; font-size: 1.05rem; }
 
 /* ---------- Sections ---------- */
-
-main { display: flex; flex-direction: column; }
-main > * { min-width: 0; width: 100%; }
-.hero { order: 0; }
-#journey { order: 10; }
-#about { order: 20; }
-#experience { order: 30; }
-#projects { order: 40; }
-#publications { order: 50; }
-#stack { order: 60; }
-#book { order: 70; }
-
-/* Researcher lens: research leads, right after the journey/about intro */
-body[data-view="researcher"] #publications { order: 21; }
 
 .section {
   max-width: var(--max-width);
@@ -573,9 +523,6 @@ body[data-view="researcher"] #publications { order: 21; }
   .nav-links li { width: 100%; }
   .nav-links a { display: block; padding: 10px 0; }
   .nav-cta { display: inline-block; margin-top: 6px; }
-
-  .lens-toggle { margin-left: 8px; }
-  .lens-btn { padding: 5px 10px; font-size: 0.76rem; }
 
   .era-node { min-width: 108px; }
 
