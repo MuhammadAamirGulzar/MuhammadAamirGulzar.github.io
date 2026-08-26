@@ -86,7 +86,7 @@ const html = `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${esc(profile.name)} — ${esc(profile.title)}</title>
+<title>${esc(profile.name)} | ${esc(profile.title)}</title>
 <meta name="description" content="${esc(profile.about)}">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -124,20 +124,18 @@ const html = `<!doctype html>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#book">Book a meeting</a>
         <a class="btn btn-ghost" href="#projects">View projects</a>
-        <a class="btn btn-ghost" href="${esc(profile.cvPath)}" target="_blank" rel="noopener">Download CV</a>
       </div>
       <ul class="hero-links">
         <li><a href="${esc(profile.links.github)}" target="_blank" rel="noopener">GitHub</a></li>
         <li><a href="${esc(profile.links.linkedin)}" target="_blank" rel="noopener">LinkedIn</a></li>
         <li><a href="${esc(profile.links.scholar)}" target="_blank" rel="noopener">Google Scholar</a></li>
-        <li><a href="mailto:${esc(profile.email)}">Email</a></li>
       </ul>
     </div>
   </section>
 
   <section id="journey" class="section reveal journey-section">
     <h2 class="section-title">Five years, every wave of AI</h2>
-    <p class="journey-lede">I didn't arrive at agentic AI — I built through every stage that led here. Select a stop to see the real work.</p>
+    <p class="journey-lede">I didn't arrive at agentic AI. I built through every stage that led here. Select a stop to see the real work.</p>
     <ol class="era-pipeline" id="eraPipeline">${erasHtml()}
     </ol>
     <div class="era-detail" id="eraDetail" aria-live="polite">
@@ -183,11 +181,11 @@ const html = `<!doctype html>
       <h2 class="section-title">Let's talk</h2>
       <p>
         Open to AI engineering engagements, research collaborations, and consulting on
-        GenAI products. Pick a time that works for you — you'll get a calendar invite with
-        a video-call link straight away, no back-and-forth needed.
+        GenAI products. Pick a time that works for you, and you'll get a calendar invite
+        with a video-call link straight away. No back-and-forth needed.
       </p>
       <a class="btn btn-primary btn-large" id="bookLink" href="#" target="_blank" rel="noopener">Book a meeting</a>
-      <p class="book-fallback">Prefer async? <a href="mailto:${esc(profile.email)}">${esc(profile.email)}</a></p>
+      <p class="book-fallback">Prefer async? <a href="${esc(profile.links.linkedin)}" target="_blank" rel="noopener">Message me on LinkedIn</a></p>
     </div>
   </section>
 
@@ -196,7 +194,6 @@ const html = `<!doctype html>
 <footer class="site-footer">
   <p>© <span id="year"></span> ${esc(profile.name)}</p>
   <ul class="footer-links">
-    <li><a href="mailto:${esc(profile.email)}">Email</a></li>
     <li><a href="${esc(profile.links.linkedin)}" target="_blank" rel="noopener">LinkedIn</a></li>
     <li><a href="${esc(profile.links.github)}" target="_blank" rel="noopener">GitHub</a></li>
     <li><a href="${esc(profile.links.scholar)}" target="_blank" rel="noopener">Scholar</a></li>
