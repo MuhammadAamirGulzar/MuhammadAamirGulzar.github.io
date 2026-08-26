@@ -17,6 +17,24 @@ function esc(s) {
     .replace(/"/g, '&quot;');
 }
 
+function erasHtml() {
+  const lastIndex = profile.eras.length - 1;
+  return profile.eras.map((era, i) => `
+      <li class="era-node" style="--i:${i}">
+        <button class="era-btn${i === lastIndex ? ' is-active' : ''}" id="era-btn-${esc(era.id)}" type="button"
+          data-era="${esc(era.id)}"
+          data-label="${esc(era.label)}"
+          data-range="${esc(era.range)}"
+          data-summary="${esc(era.summary)}"
+          data-evidence='${esc(JSON.stringify(era.evidence))}'
+          aria-pressed="${i === lastIndex ? 'true' : 'false'}">
+          <span class="era-range">${esc(era.range)}</span>
+          <span class="era-label">${esc(era.label)}</span>
+          ${i === lastIndex ? '<span class="era-now">now</span>' : ''}
+        </button>
+      </li>`).join('');
+}
+
 function factsHtml() {
   return profile.facts.map(f => `
         <li><span class="fact-label">${esc(f.label)}</span> ${esc(f.text)}</li>`).join('');
@@ -81,14 +99,21 @@ const html = `<!doctype html>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#publications">Research</a></li>
-      <li><a href="#stack">Stack</a></li>
-      <li><a class="nav-cta" href="#book">Book a meeting</a></li>
-    </ul>
+    <div class="nav-right">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Research</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a class="nav-cta" href="#book">Book a meeting</a></li>
+      </ul>
+      <div class="lens-toggle" role="group" aria-label="Reading as">
+        <button class="lens-btn" id="lensRecruiter" type="button" aria-pressed="true">Recruiter</button>
+        <button class="lens-btn" id="lensResearcher" type="button" aria-pressed="false">Researcher</button>
+      </div>
+    </div>
   </nav>
 </header>
 
@@ -98,7 +123,7 @@ const html = `<!doctype html>
     <div class="hero-inner">
       <p class="eyebrow">${esc(profile.eyebrow)}</p>
       <h1>${esc(profile.name)}</h1>
-      <p class="hero-lede">${esc(profile.heroLede)}</p>
+      <p class="hero-lede" id="heroLede" data-recruiter="${esc(profile.heroLede)}" data-researcher="${esc(profile.heroLedeResearch)}">${esc(profile.heroLede)}</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#book">Book a meeting</a>
         <a class="btn btn-ghost" href="#projects">View projects</a>
@@ -109,6 +134,19 @@ const html = `<!doctype html>
         <li><a href="${esc(profile.links.linkedin)}" target="_blank" rel="noopener">LinkedIn</a></li>
         <li><a href="${esc(profile.links.scholar)}" target="_blank" rel="noopener">Google Scholar</a></li>
         <li><a href="mailto:${esc(profile.email)}">Email</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="journey" class="section reveal journey-section">
+    <h2 class="section-title">Five years, every wave of AI</h2>
+    <p class="journey-lede">I didn't arrive at agentic AI — I built through every stage that led here. Select a stop to see the real work.</p>
+    <ol class="era-pipeline" id="eraPipeline">${erasHtml()}
+    </ol>
+    <div class="era-detail" id="eraDetail" aria-live="polite">
+      <p class="era-summary" id="eraDetailSummary">${esc(profile.eras[profile.eras.length - 1].summary)}</p>
+      <ul class="era-evidence" id="eraDetailEvidence">${profile.eras[profile.eras.length - 1].evidence.map(ev => `
+        <li><a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.name)} →</a></li>`).join('')}
       </ul>
     </div>
   </section>

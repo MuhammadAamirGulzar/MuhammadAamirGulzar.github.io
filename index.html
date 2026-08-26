@@ -16,14 +16,21 @@
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#publications">Research</a></li>
-      <li><a href="#stack">Stack</a></li>
-      <li><a class="nav-cta" href="#book">Book a meeting</a></li>
-    </ul>
+    <div class="nav-right">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Research</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a class="nav-cta" href="#book">Book a meeting</a></li>
+      </ul>
+      <div class="lens-toggle" role="group" aria-label="Reading as">
+        <button class="lens-btn" id="lensRecruiter" type="button" aria-pressed="true">Recruiter</button>
+        <button class="lens-btn" id="lensResearcher" type="button" aria-pressed="false">Researcher</button>
+      </div>
+    </div>
   </nav>
 </header>
 
@@ -33,7 +40,7 @@
     <div class="hero-inner">
       <p class="eyebrow">AI Engineer · Production GenAI &amp; Agentic Systems</p>
       <h1>Muhammad Aamir Gulzar</h1>
-      <p class="hero-lede">I build AI systems that make it to production — not just to a demo. Currently an independent AI Engineer, building a production multi-agent RAG system for a confidential US enterprise client on Vertex AI.</p>
+      <p class="hero-lede" id="heroLede" data-recruiter="I build AI systems that make it to production — not just to a demo. Currently an independent AI Engineer, building a production multi-agent RAG system for a confidential US enterprise client on Vertex AI." data-researcher="Five years in AI, spanning the field's own evolution — classical ML through agentic systems — with a first-author Q1 publication and a research practice that reports honest negative results, not just wins. Currently building a production multi-agent RAG system for a confidential US enterprise client on Vertex AI.">I build AI systems that make it to production — not just to a demo. Currently an independent AI Engineer, building a production multi-agent RAG system for a confidential US enterprise client on Vertex AI.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#book">Book a meeting</a>
         <a class="btn btn-ghost" href="#projects">View projects</a>
@@ -44,6 +51,98 @@
         <li><a href="https://www.linkedin.com/in/m-aamir-gulzar/" target="_blank" rel="noopener">LinkedIn</a></li>
         <li><a href="https://scholar.google.com/citations?user=q2Oh69IAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
         <li><a href="mailto:amirgulzar328@gmail.com">Email</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="journey" class="section reveal journey-section">
+    <h2 class="section-title">Five years, every wave of AI</h2>
+    <p class="journey-lede">I didn't arrive at agentic AI — I built through every stage that led here. Select a stop to see the real work.</p>
+    <ol class="era-pipeline" id="eraPipeline">
+      <li class="era-node" style="--i:0">
+        <button class="era-btn" id="era-btn-foundations" type="button"
+          data-era="foundations"
+          data-label="Foundations"
+          data-range="2021"
+          data-summary="Classical ML — the fundamentals everything after builds on."
+          data-evidence='[{&quot;name&quot;:&quot;Text Classification Workbench&quot;,&quot;url&quot;:&quot;https://github.com/MuhammadAamirGulzar/TextClassification_ML_DL&quot;},{&quot;name&quot;:&quot;Stock Price Predictor&quot;,&quot;url&quot;:&quot;https://github.com/MuhammadAamirGulzar/stock-price-predictor&quot;}]'
+          aria-pressed="false">
+          <span class="era-range">2021</span>
+          <span class="era-label">Foundations</span>
+          
+        </button>
+      </li>
+      <li class="era-node" style="--i:1">
+        <button class="era-btn" id="era-btn-deep-learning" type="button"
+          data-era="deep-learning"
+          data-label="Deep Learning"
+          data-range="2022"
+          data-summary="Transformers and CNNs, fine-tuned and benchmarked properly."
+          data-evidence='[{&quot;name&quot;:&quot;Transformer QA Pipeline&quot;,&quot;url&quot;:&quot;https://github.com/MuhammadAamirGulzar/transformer-qa-pipeline&quot;},{&quot;name&quot;:&quot;CNN Baseline (WSI)&quot;,&quot;url&quot;:&quot;https://github.com/MuhammadAamirGulzar/cnn-baseline-wsi-classification&quot;}]'
+          aria-pressed="false">
+          <span class="era-range">2022</span>
+          <span class="era-label">Deep Learning</span>
+          
+        </button>
+      </li>
+      <li class="era-node" style="--i:2">
+        <button class="era-btn" id="era-btn-computer-vision" type="button"
+          data-era="computer-vision"
+          data-label="Computer Vision"
+          data-range="2023"
+          data-summary="From pixel classifiers to foundation-model pathology — this is the published research."
+          data-evidence='[{&quot;name&quot;:&quot;colonmsi-fm (Q1 publication)&quot;,&quot;url&quot;:&quot;https://github.com/MuhammadAamirGulzar/colonmsi-fm&quot;},{&quot;name&quot;:&quot;HayaVision (moderation)&quot;,&quot;url&quot;:&quot;https://github.com/MuhammadAamirGulzar/hayavision&quot;}]'
+          aria-pressed="false">
+          <span class="era-range">2023</span>
+          <span class="era-label">Computer Vision</span>
+          
+        </button>
+      </li>
+      <li class="era-node" style="--i:3">
+        <button class="era-btn" id="era-btn-nlp" type="button"
+          data-era="nlp"
+          data-label="NLP"
+          data-range="2024"
+          data-summary="Language understanding at production quality, not notebook quality."
+          data-evidence='[{&quot;name&quot;:&quot;Agentic Translation API&quot;,&quot;url&quot;:&quot;https://github.com/MuhammadAamirGulzar/agentic-translation-api&quot;},{&quot;name&quot;:&quot;Multiformat RAG Assistant&quot;,&quot;url&quot;:&quot;https://github.com/MuhammadAamirGulzar/multiformat-rag-assistant&quot;}]'
+          aria-pressed="false">
+          <span class="era-range">2024</span>
+          <span class="era-label">NLP</span>
+          
+        </button>
+      </li>
+      <li class="era-node" style="--i:4">
+        <button class="era-btn" id="era-btn-generative-ai" type="button"
+          data-era="generative-ai"
+          data-label="Generative AI"
+          data-range="2025"
+          data-summary="Voice, video, and image synthesis, shipped as real products."
+          data-evidence='[{&quot;name&quot;:&quot;SUSAN-GPT&quot;,&quot;url&quot;:&quot;https://susan.fi&quot;},{&quot;name&quot;:&quot;Urdu AI Video Creator&quot;,&quot;url&quot;:&quot;https://github.com/MuhammadAamirGulzar/urdu-ai-video-creator&quot;}]'
+          aria-pressed="false">
+          <span class="era-range">2025</span>
+          <span class="era-label">Generative AI</span>
+          
+        </button>
+      </li>
+      <li class="era-node" style="--i:5">
+        <button class="era-btn is-active" id="era-btn-agentic-ai" type="button"
+          data-era="agentic-ai"
+          data-label="Agentic AI"
+          data-range="2026 — now"
+          data-summary="Multi-agent orchestration and autonomous systems, in production."
+          data-evidence='[{&quot;name&quot;:&quot;Contract Automation Pipeline&quot;,&quot;url&quot;:&quot;https://github.com/MuhammadAamirGulzar/contract-automation-pipeline&quot;},{&quot;name&quot;:&quot;Zoning Map Agent&quot;,&quot;url&quot;:&quot;https://github.com/MuhammadAamirGulzar/zoning-map-agent&quot;}]'
+          aria-pressed="true">
+          <span class="era-range">2026 — now</span>
+          <span class="era-label">Agentic AI</span>
+          <span class="era-now">now</span>
+        </button>
+      </li>
+    </ol>
+    <div class="era-detail" id="eraDetail" aria-live="polite">
+      <p class="era-summary" id="eraDetailSummary">Multi-agent orchestration and autonomous systems, in production.</p>
+      <ul class="era-evidence" id="eraDetailEvidence">
+        <li><a href="https://github.com/MuhammadAamirGulzar/contract-automation-pipeline" target="_blank" rel="noopener">Contract Automation Pipeline →</a></li>
+        <li><a href="https://github.com/MuhammadAamirGulzar/zoning-map-agent" target="_blank" rel="noopener">Zoning Map Agent →</a></li>
       </ul>
     </div>
   </section>

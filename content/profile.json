@@ -4,6 +4,7 @@
   "title": "AI Engineer",
   "eyebrow": "AI Engineer · Production GenAI & Agentic Systems",
   "heroLede": "I build AI systems that make it to production — not just to a demo. Currently an independent AI Engineer, building a production multi-agent RAG system for a confidential US enterprise client on Vertex AI.",
+  "heroLedeResearch": "Five years in AI, spanning the field's own evolution — classical ML through agentic systems — with a first-author Q1 publication and a research practice that reports honest negative results, not just wins. Currently building a production multi-agent RAG system for a confidential US enterprise client on Vertex AI.",
   "email": "amirgulzar328@gmail.com",
   "links": {
     "github": "https://github.com/MuhammadAamirGulzar",
@@ -14,6 +15,69 @@
   "bookingUrl": "https://example.com/book",
 
   "about": "I'm an AI Engineer specializing in production-grade Generative AI, RAG, and agentic systems, with peer-reviewed research in medical AI. Over the past 3+ years I've shipped LLM applications, real-time voice agents, enterprise automation pipelines, and multimodal systems — taking each from research prototype to scalable deployment, not just a working demo.",
+
+  "eras": [
+    {
+      "id": "foundations",
+      "label": "Foundations",
+      "range": "2021",
+      "summary": "Classical ML — the fundamentals everything after builds on.",
+      "evidence": [
+        { "name": "Text Classification Workbench", "url": "https://github.com/MuhammadAamirGulzar/TextClassification_ML_DL" },
+        { "name": "Stock Price Predictor", "url": "https://github.com/MuhammadAamirGulzar/stock-price-predictor" }
+      ]
+    },
+    {
+      "id": "deep-learning",
+      "label": "Deep Learning",
+      "range": "2022",
+      "summary": "Transformers and CNNs, fine-tuned and benchmarked properly.",
+      "evidence": [
+        { "name": "Transformer QA Pipeline", "url": "https://github.com/MuhammadAamirGulzar/transformer-qa-pipeline" },
+        { "name": "CNN Baseline (WSI)", "url": "https://github.com/MuhammadAamirGulzar/cnn-baseline-wsi-classification" }
+      ]
+    },
+    {
+      "id": "computer-vision",
+      "label": "Computer Vision",
+      "range": "2023",
+      "summary": "From pixel classifiers to foundation-model pathology — this is the published research.",
+      "evidence": [
+        { "name": "colonmsi-fm (Q1 publication)", "url": "https://github.com/MuhammadAamirGulzar/colonmsi-fm" },
+        { "name": "HayaVision (moderation)", "url": "https://github.com/MuhammadAamirGulzar/hayavision" }
+      ]
+    },
+    {
+      "id": "nlp",
+      "label": "NLP",
+      "range": "2024",
+      "summary": "Language understanding at production quality, not notebook quality.",
+      "evidence": [
+        { "name": "Agentic Translation API", "url": "https://github.com/MuhammadAamirGulzar/agentic-translation-api" },
+        { "name": "Multiformat RAG Assistant", "url": "https://github.com/MuhammadAamirGulzar/multiformat-rag-assistant" }
+      ]
+    },
+    {
+      "id": "generative-ai",
+      "label": "Generative AI",
+      "range": "2025",
+      "summary": "Voice, video, and image synthesis, shipped as real products.",
+      "evidence": [
+        { "name": "SUSAN-GPT", "url": "https://susan.fi" },
+        { "name": "Urdu AI Video Creator", "url": "https://github.com/MuhammadAamirGulzar/urdu-ai-video-creator" }
+      ]
+    },
+    {
+      "id": "agentic-ai",
+      "label": "Agentic AI",
+      "range": "2026 — now",
+      "summary": "Multi-agent orchestration and autonomous systems, in production.",
+      "evidence": [
+        { "name": "Contract Automation Pipeline", "url": "https://github.com/MuhammadAamirGulzar/contract-automation-pipeline" },
+        { "name": "Zoning Map Agent", "url": "https://github.com/MuhammadAamirGulzar/zoning-map-agent" }
+      ]
+    }
+  ],
 
   "facts": [
     { "label": "Currently", "text": "Independent AI Engineer — self-employed, remote" },

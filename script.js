@@ -18,6 +18,62 @@ navLinks.querySelectorAll('a').forEach(a => {
   });
 });
 
+// ---------- Era pipeline ----------
+const eraButtons = document.querySelectorAll('.era-btn');
+const eraSummaryEl = document.getElementById('eraDetailSummary');
+const eraEvidenceEl = document.getElementById('eraDetailEvidence');
+
+function activateEra(btn) {
+  eraButtons.forEach(b => {
+    b.classList.remove('is-active');
+    b.setAttribute('aria-pressed', 'false');
+  });
+  btn.classList.add('is-active');
+  btn.setAttribute('aria-pressed', 'true');
+
+  eraSummaryEl.textContent = btn.dataset.summary;
+
+  let evidence = [];
+  try { evidence = JSON.parse(btn.dataset.evidence); } catch (e) { evidence = []; }
+  eraEvidenceEl.innerHTML = evidence.map(ev => {
+    const a = document.createElement('a');
+    a.href = ev.url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.textContent = ev.name + ' →';
+    const li = document.createElement('li');
+    li.appendChild(a);
+    return li.outerHTML;
+  }).join('');
+}
+
+eraButtons.forEach(btn => {
+  btn.addEventListener('click', () => activateEra(btn));
+});
+
+// ---------- Recruiter / Researcher lens ----------
+const lensRecruiter = document.getElementById('lensRecruiter');
+const lensResearcher = document.getElementById('lensResearcher');
+const heroLede = document.getElementById('heroLede');
+
+function setLens(view) {
+  document.body.setAttribute('data-view', view);
+  const isResearcher = view === 'researcher';
+  lensRecruiter.setAttribute('aria-pressed', String(!isResearcher));
+  lensResearcher.setAttribute('aria-pressed', String(isResearcher));
+  if (heroLede) {
+    heroLede.textContent = isResearcher ? heroLede.dataset.researcher : heroLede.dataset.recruiter;
+  }
+  try { localStorage.setItem('lens', view); } catch (e) { /* private mode etc. */ }
+}
+
+lensRecruiter.addEventListener('click', () => setLens('recruiter'));
+lensResearcher.addEventListener('click', () => setLens('researcher'));
+
+let savedLens = 'recruiter';
+try { savedLens = localStorage.getItem('lens') || 'recruiter'; } catch (e) { /* private mode etc. */ }
+if (savedLens === 'researcher') setLens('researcher');
+
 const revealTargets = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window) {
   const io = new IntersectionObserver((entries) => {

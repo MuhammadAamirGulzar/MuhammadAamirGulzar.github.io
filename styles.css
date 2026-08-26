@@ -113,6 +113,42 @@ img { max-width: 100%; }
   border-radius: 2px;
 }
 
+/* ---------- Nav right group / Lens toggle ---------- */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.lens-toggle {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  margin-left: 14px;
+}
+
+.lens-btn {
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 13px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.lens-btn[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
 /* ---------- Hero ---------- */
 
 .hero {
@@ -190,6 +226,20 @@ img { max-width: 100%; }
 
 /* ---------- Sections ---------- */
 
+main { display: flex; flex-direction: column; }
+main > * { min-width: 0; width: 100%; }
+.hero { order: 0; }
+#journey { order: 10; }
+#about { order: 20; }
+#experience { order: 30; }
+#projects { order: 40; }
+#publications { order: 50; }
+#stack { order: 60; }
+#book { order: 70; }
+
+/* Researcher lens: research leads, right after the journey/about intro */
+body[data-view="researcher"] #publications { order: 21; }
+
 .section {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -242,6 +292,124 @@ img { max-width: 100%; }
   font-weight: 700;
   margin-bottom: 2px;
 }
+
+/* ---------- Journey / era pipeline ---------- */
+
+.journey-section { padding-top: 8px; }
+
+.journey-lede {
+  color: var(--text-muted);
+  font-size: 1.02rem;
+  max-width: 640px;
+  margin: 0 0 40px;
+}
+
+.era-pipeline {
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin: 0 0 28px;
+  padding: 26px 0 6px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+}
+
+.era-node {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 128px;
+  display: flex;
+}
+
+.era-node::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: calc(-50% + 10px);
+  width: calc(100% - 20px);
+  height: 2px;
+  background: var(--border);
+}
+.era-node:first-child::before { display: none; }
+
+.era-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 14px 16px;
+  margin: 0 6px;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+}
+.era-btn:hover { border-color: var(--accent); transform: translateY(-2px); }
+.era-btn.is-active,
+.era-btn[aria-pressed="true"] {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 28%, transparent);
+}
+
+.era-btn::before {
+  content: "";
+  position: absolute;
+  top: -23px;
+  left: 14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+  border: 2px solid var(--bg);
+}
+.era-btn.is-active::before,
+.era-btn[aria-pressed="true"]::before {
+  background: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.era-range {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.era-label {
+  font-size: 0.96rem;
+  font-weight: 700;
+}
+.era-now {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+.era-detail {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 26px;
+}
+.era-detail .era-summary { margin: 0 0 12px; font-size: 1.02rem; }
+.era-evidence {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin: 0;
+  padding: 0;
+}
+.era-evidence a { font-weight: 600; font-size: 0.92rem; }
 
 /* ---------- Timeline ---------- */
 
@@ -405,6 +573,11 @@ img { max-width: 100%; }
   .nav-links li { width: 100%; }
   .nav-links a { display: block; padding: 10px 0; }
   .nav-cta { display: inline-block; margin-top: 6px; }
+
+  .lens-toggle { margin-left: 8px; }
+  .lens-btn { padding: 5px 10px; font-size: 0.76rem; }
+
+  .era-node { min-width: 108px; }
 
   .book-card { padding: 32px 22px; }
 }
