@@ -1,9 +1,7 @@
 'use strict';
 
-// Update this once the booking backend is deployed (Cloud Run URL + /book).
-const BOOKING_URL = 'https://example.com/book';
-
-document.getElementById('bookLink').href = BOOKING_URL;
+// Set from content/profile.json's bookingUrl by scripts/build.js — edit that, not this.
+document.getElementById('bookLink').href = window.__BOOKING_URL__;
 
 document.getElementById('year').textContent = new Date().getFullYear();
 

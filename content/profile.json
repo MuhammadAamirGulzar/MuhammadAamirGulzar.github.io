@@ -1,0 +1,136 @@
+{
+  "name": "Muhammad Aamir Gulzar",
+  "shortName": "Aamir Gulzar",
+  "title": "AI Engineer",
+  "eyebrow": "AI Engineer · Production GenAI & Agentic Systems",
+  "heroLede": "I build AI systems that make it to production — not just to a demo. Currently an independent AI Engineer, building a production multi-agent RAG system for a confidential US enterprise client on Vertex AI.",
+  "email": "amirgulzar328@gmail.com",
+  "links": {
+    "github": "https://github.com/MuhammadAamirGulzar",
+    "linkedin": "https://www.linkedin.com/in/m-aamir-gulzar/",
+    "scholar": "https://scholar.google.com/citations?user=q2Oh69IAAAAJ&hl=en"
+  },
+  "cvPath": "assets/Aamir_Gulzar_CV.pdf",
+  "bookingUrl": "https://example.com/book",
+
+  "about": "I'm an AI Engineer specializing in production-grade Generative AI, RAG, and agentic systems, with peer-reviewed research in medical AI. Over the past 3+ years I've shipped LLM applications, real-time voice agents, enterprise automation pipelines, and multimodal systems — taking each from research prototype to scalable deployment, not just a working demo.",
+
+  "facts": [
+    { "label": "Currently", "text": "Independent AI Engineer — self-employed, remote" },
+    { "label": "Research", "text": "First-author, Q1 journal (2025) — pathology foundation models for MSI prediction in colorectal cancer" },
+    { "label": "Education", "text": "MS Computer Science, FAST-NUCES" },
+    { "label": "Teaching", "text": "Lecturer, FAST-NUCES (since Mar 2024)" },
+    { "label": "Building", "text": "A multi-agent system — agentic orchestration, tool use, evaluation" }
+  ],
+
+  "experience": [
+    {
+      "when": "Jun 2026 — Present",
+      "title": "Independent AI Engineer",
+      "org": "Self-employed",
+      "location": "Remote",
+      "summary": "Building a production-scale multi-agent RAG system for a confidential US (California State) enterprise client — Vertex AI Vector Search, Gemini Embedding 001, Gemini 2.5 Flash, Kubeflow v2 pipelines on GCP Cloud Run."
+    },
+    {
+      "when": "Nov 2025 — Jun 2026",
+      "title": "AI Engineer",
+      "org": "TalentBridge Oy · client: Neste",
+      "location": "Espoo, Finland (Remote)",
+      "summary": "Built an automated contract-generation system for Neste on Vertex AI Pipelines and Snowflake (90%+ automated accuracy, 98%+ field accuracy, ~20x scale). Built SUSAN-GPT, a voice-enabled RAG career assistant for Finnish jobseekers, and Staffin, an AI resume-matching and multi-agent interview screening platform."
+    },
+    {
+      "when": "Jan 2025 — Jun 2025",
+      "title": "AI Product Advisor (R&D)",
+      "org": "APIMatic",
+      "location": "Remote — New Zealand",
+      "summary": "Led an R&D VSCode extension for AI Copilot, optimizing code generation for API integrations."
+    },
+    {
+      "when": "Aug 2023 — Oct 2024",
+      "title": "ML Engineer → ML Consultant",
+      "org": "PlanetBeyond",
+      "location": "Islamabad, Pakistan",
+      "summary": "Real-time autonomous AI voice caller; multi-format financial RAG QA over SEC filings; on-device LLM optimization via MediaPipe."
+    },
+    {
+      "when": "Jul 2022 — Oct 2025",
+      "title": "Research Assistant → AI Research Scientist / Team Lead",
+      "org": "DataInsight Research Lab",
+      "location": "International collaboration",
+      "summary": "Benchmarked pathology foundation models for the Q1 publication; led a spatial-transcriptomics study in pancreatic cancer; mentored three cohorts of AI interns."
+    },
+    {
+      "when": "Aug 2021 — Present",
+      "title": "Lab Instructor → Lecturer",
+      "org": "FAST-NUCES",
+      "location": "Islamabad, Pakistan",
+      "summary": "Core lectures in AI, Machine Learning, and Programming; supervised final-year ML projects; corporate AI training for NPA and NAVTTC."
+    }
+  ],
+
+  "education": [
+    { "degree": "MS Computer Science", "org": "FAST School of Computing (NUCES)", "when": "Sep 2021 — Jan 2024" },
+    { "degree": "BS Computer Science", "org": "PMAS Arid Agriculture University", "when": "Aug 2017 — Jul 2021" }
+  ],
+
+  "publications": [
+    {
+      "venue": "Q1 journal · 2025 · First author",
+      "title": "Benchmarking pathology foundation models for MSI prediction in colorectal cancer",
+      "description": "Evaluating foundation models (CONCH, UNI, and others) for microsatellite instability prediction from whole-slide histopathology images.",
+      "link": "https://scholar.google.com/citations?user=q2Oh69IAAAAJ&hl=en"
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "SUSAN-GPT",
+      "url": "https://susan.fi",
+      "description": "Voice-enabled, RAG-powered AI assistant delivering career, business, and integration guidance to jobseekers and entrepreneurs in Finland. Live in production.",
+      "stack": "RAG · Voice AI · Production"
+    },
+    {
+      "name": "Staffin",
+      "url": "https://staffin.fi",
+      "description": "AI-powered resume-matching and job-discovery platform with a companion multi-agent interview system for automated candidate screening. Live in production.",
+      "stack": "Multi-agent · Resume matching · Production"
+    },
+    {
+      "name": "Voice AI Microservice",
+      "url": "https://github.com/MuhammadAamirGulzar/voice-ai-microservice",
+      "description": "Real-time multi-tenant voice platform · 1,000+ concurrent sessions · sub-500ms latency.",
+      "stack": "Pipecat · WebRTC · AssemblyAI · FastAPI"
+    },
+    {
+      "name": "Contract Automation Pipeline",
+      "url": "https://github.com/MuhammadAamirGulzar/contract-automation-pipeline",
+      "description": "Enterprise document automation · 98%+ field accuracy · under 5 minutes per trade.",
+      "stack": "Vertex AI Pipelines · Gemini 2.5 Pro · Snowflake"
+    },
+    {
+      "name": "Zoning Map Agent",
+      "url": "https://github.com/MuhammadAamirGulzar/zoning-map-agent",
+      "description": "Deterministic-first agent that recovers delisted municipal documents, with bounded LLM escalation.",
+      "stack": "Python · Playwright · Docker"
+    },
+    {
+      "name": "colonmsi-fm",
+      "url": "https://github.com/MuhammadAamirGulzar/colonmsi-fm",
+      "description": "Code behind my first-author Q1 pathology-AI publication.",
+      "stack": "CONCH · UNI · PyTorch · OpenSlide"
+    },
+    {
+      "name": "Urdu AI Video Creator",
+      "url": "https://github.com/MuhammadAamirGulzar/urdu-ai-video-creator",
+      "description": "Full-stack generative video — voice cloning and lip-sync from a script.",
+      "stack": "Wav2Lip · XTTS v2 · Next.js · FastAPI"
+    }
+  ],
+
+  "stack": {
+    "GenAI & Agents": ["LangChain", "LangGraph", "CrewAI", "LlamaIndex", "Pipecat", "RAG", "Gemini", "OpenAI", "Hugging Face"],
+    "ML / DL": ["PyTorch", "TensorFlow", "scikit-learn"],
+    "Backend & Data": ["Python", "FastAPI", "PostgreSQL", "Snowflake", "Qdrant"],
+    "Cloud & MLOps": ["Google Cloud", "AWS", "Azure", "Docker"]
+  }
+}
