@@ -140,6 +140,12 @@
       "title": "Benchmarking pathology foundation models for MSI prediction in colorectal cancer",
       "description": "Evaluating foundation models (CONCH, UNI, and others) for microsatellite instability prediction from whole-slide histopathology images.",
       "link": "https://scholar.google.com/citations?user=q2Oh69IAAAAJ&hl=en"
+    },
+    {
+      "venue": "Book chapter · 2024 · First author",
+      "title": "Skin Disease Detection and Classification",
+      "description": "Automated skin-disease diagnosis combining HOG and FFT feature extraction with classical machine learning models. In Intelligent Data Analytics for Bioinformatics and Biomedical Systems (Wiley, 2024), pp. 67-92.",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=q2Oh69IAAAAJ&citation_for_view=q2Oh69IAAAAJ:u-x6o8ySG0sC"
     }
   ],
 
@@ -155,12 +161,6 @@
       "url": "https://staffin.fi",
       "description": "AI-powered resume-matching and job-discovery platform with a companion multi-agent interview system for automated candidate screening. Live in production.",
       "stack": "Multi-agent · Resume matching · Production"
-    },
-    {
-      "name": "Voice AI Microservice",
-      "url": "https://github.com/MuhammadAamirGulzar/voice-ai-microservice",
-      "description": "Real-time multi-tenant voice platform · 1,000+ concurrent sessions · sub-500ms latency.",
-      "stack": "Pipecat · WebRTC · AssemblyAI · FastAPI"
     },
     {
       "name": "Contract Automation Pipeline",
@@ -189,9 +189,11 @@
   ],
 
   "stack": {
-    "GenAI & Agents": ["LangChain", "LangGraph", "CrewAI", "LlamaIndex", "Pipecat", "RAG", "Gemini", "OpenAI", "Hugging Face"],
-    "ML / DL": ["PyTorch", "TensorFlow", "scikit-learn"],
-    "Backend & Data": ["Python", "FastAPI", "PostgreSQL", "Snowflake", "Qdrant"],
-    "Cloud & MLOps": ["Google Cloud", "AWS", "Azure", "Docker"]
+    "GenAI & Agents": ["LangChain", "LangGraph", "CrewAI", "LlamaIndex", "RAG", "Vertex AI", "Gemini", "OpenAI", "Ollama", "Hugging Face"],
+    "Voice & Real-Time AI": ["Pipecat", "WebRTC", "Twilio", "Whisper", "Deepgram", "ElevenLabs"],
+    "ML / DL": ["PyTorch", "TensorFlow", "Transformers", "XGBoost", "scikit-learn"],
+    "Backend & Data": ["Python", "FastAPI", "Node.js", "Playwright", "PostgreSQL", "MongoDB", "Redis", "Snowflake", "Qdrant", "ChromaDB"],
+    "Frontend": ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    "Cloud & MLOps": ["Google Cloud", "Vertex AI Pipelines", "Kubeflow", "Cloud Run", "AWS", "Azure", "Docker"]
   }
 }
