@@ -90,14 +90,14 @@
       "title": "Independent AI Engineer",
       "org": "Self-employed",
       "location": "Remote",
-      "summary": "Building a production-scale multi-agent RAG system for a confidential US (California State) enterprise client, using Vertex AI Vector Search, Gemini Embedding 001, Gemini 2.5 Flash, and Kubeflow v2 pipelines on GCP Cloud Run."
+      "summary": "Leading independent development of GovXprt (govxprt.ai), a production-scale multi-agent RAG system for a confidential US (California State) enterprise client, using Vertex AI Vector Search, Gemini Embedding 001, Gemini 2.5 Flash, and Kubeflow v2 pipelines on GCP Cloud Run."
     },
     {
       "when": "Nov 2025-Jun 2026",
       "title": "AI Engineer",
       "org": "TalentBridge Oy · client: Neste",
       "location": "Espoo, Finland (Remote)",
-      "summary": "Built an automated contract-generation system for Neste on Vertex AI Pipelines and Snowflake (90%+ automated accuracy, 98%+ field accuracy, ~20x scale), and four production products for TalentBridge itself: SUSAN-GPT (voice-enabled RAG career assistant), Staffin (AI resume-matching and interview screening), GovXprt (AI-assisted regulatory compliance), and EagleChat (AI tutoring, built on the SUSAN-GPT backend)."
+      "summary": "Built an automated contract-generation system for Neste on Vertex AI Pipelines and Snowflake (90%+ automated accuracy, 98%+ field accuracy, ~20x scale), and three production products for TalentBridge itself: SUSAN-GPT (voice-enabled RAG career assistant), Staffin (AI resume-matching and interview screening), and EagleChat (AI tutoring, built on the SUSAN-GPT backend)."
     },
     {
       "when": "Jan 2025-Jun 2025",
