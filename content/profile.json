@@ -97,7 +97,7 @@
       "title": "AI Engineer",
       "org": "TalentBridge Oy · client: Neste",
       "location": "Espoo, Finland (Remote)",
-      "summary": "Built an automated contract-generation system for Neste on Vertex AI Pipelines and Snowflake (90%+ automated accuracy, 98%+ field accuracy, ~20x scale). Built SUSAN-GPT, a voice-enabled RAG career assistant for Finnish jobseekers, and Staffin, an AI resume-matching and multi-agent interview screening platform."
+      "summary": "Built an automated contract-generation system for Neste on Vertex AI Pipelines and Snowflake (90%+ automated accuracy, 98%+ field accuracy, ~20x scale), and four production products for TalentBridge itself: SUSAN-GPT (voice-enabled RAG career assistant), Staffin (AI resume-matching and interview screening), GovXprt (AI-assisted regulatory compliance), and EagleChat (AI tutoring, built on the SUSAN-GPT backend)."
     },
     {
       "when": "Jan 2025-Jun 2025",
@@ -161,6 +161,18 @@
       "url": "https://staffin.fi",
       "description": "AI-powered resume-matching and job-discovery platform with a companion multi-agent interview system for automated candidate screening. Live in production.",
       "stack": "Multi-agent · Resume matching · Production"
+    },
+    {
+      "name": "GovXprt",
+      "url": "https://govxprt.ai",
+      "description": "AI-assisted regulatory compliance platform for environmental health permitting (food safety, pool compliance), pairing instant AI guidance with a vetted expert network. Live in production.",
+      "stack": "RAG · Regulatory Compliance · Production"
+    },
+    {
+      "name": "EagleChat",
+      "url": "https://eaglechat.ai",
+      "description": "AI tutoring platform for NCLEX nursing exam prep, journalism, medical assistant training, and financial literacy, built on the SUSAN-GPT voice/RAG backend. Live in production.",
+      "stack": "RAG · Voice AI · EdTech · Production"
     },
     {
       "name": "Contract Automation Pipeline",
