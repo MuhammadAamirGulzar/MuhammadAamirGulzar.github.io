@@ -134,7 +134,7 @@ const html = `<!doctype html>
   </section>
 
   <section id="journey" class="section reveal journey-section">
-    <h2 class="section-title">Five years, every wave of AI</h2>
+    <h2 class="section-title">AI since 2021, production LLM systems since 2023</h2>
     <p class="journey-lede">I didn't arrive at agentic AI. I built through every stage that led here. Select a stop to see the real work.</p>
     <ol class="era-pipeline" id="eraPipeline">${erasHtml()}
     </ol>

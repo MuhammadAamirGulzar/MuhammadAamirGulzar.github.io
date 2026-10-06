@@ -1,8 +1,8 @@
 {
   "name": "Muhammad Aamir Gulzar",
   "shortName": "Aamir Gulzar",
-  "title": "AI Engineer",
-  "eyebrow": "AI Engineer · Production GenAI & Agentic Systems",
+  "title": "AI/ML Engineer",
+  "eyebrow": "AI/ML Engineer · Production GenAI & Agentic Systems",
   "heroLede": "I build AI systems that make it to production, not just to a demo. Currently an independent AI Engineer, building a production multi-agent RAG system for a confidential US enterprise client on Vertex AI.",
   "links": {
     "github": "https://github.com/MuhammadAamirGulzar",
@@ -11,7 +11,7 @@
   },
   "bookingUrl": "https://calendar.app.google/YvJE2aBRHt7XLjLC6",
 
-  "about": "I'm an AI Engineer specializing in production-grade Generative AI, RAG, and agentic systems, with peer-reviewed research in medical AI. Over the past 5+ years I've shipped LLM applications, real-time voice agents, enterprise automation pipelines, and multimodal systems, taking each from research prototype to scalable deployment, not just a working demo.",
+  "about": "I'm an AI/ML Engineer who takes LLM and agentic systems from prototype to production, with live solutions across RAG, voice AI, and enterprise automation. I've worked in AI since 2021, and over the past 3+ years I've shipped LLM applications, real-time voice agents, enterprise automation pipelines, and multimodal systems. I turn business problems into working AI systems, choosing the right approach for each, from data processing and feature engineering through model training, optimization, large-scale deployment, and continuous learning. Q1-published researcher in medical AI, bringing research rigor to engineering.",
 
   "eras": [
     {
@@ -78,7 +78,7 @@
 
   "facts": [
     { "label": "Currently", "text": "Independent AI Engineer, self-employed, remote" },
-    { "label": "Research", "text": "First-author, Q1 journal (2025): pathology foundation models for MSI prediction in colorectal cancer" },
+    { "label": "Research", "text": "Joint first-author, Q1 journal (2025): pathology foundation models for MSI prediction in colorectal cancer" },
     { "label": "Education", "text": "MS Computer Science, FAST-NUCES" },
     { "label": "Teaching", "text": "Lecturer, FAST-NUCES (since Mar 2024)" },
     { "label": "Building", "text": "A multi-agent system: agentic orchestration, tool use, evaluation" }
@@ -136,16 +136,16 @@
 
   "publications": [
     {
-      "venue": "Q1 journal · 2025 · First author",
+      "venue": "Q1 journal · 2025 · Joint first author",
       "title": "Benchmarking pathology foundation models for MSI prediction in colorectal cancer",
       "description": "Evaluating foundation models (CONCH, UNI, and others) for microsatellite instability prediction from whole-slide histopathology images.",
-      "link": "https://scholar.google.com/citations?user=q2Oh69IAAAAJ&hl=en"
+      "link": "https://www.sciencedirect.com/science/article/pii/S0895611125001892"
     },
     {
       "venue": "Book chapter · 2024 · First author",
       "title": "Skin Disease Detection and Classification",
       "description": "Automated skin-disease diagnosis combining HOG and FFT feature extraction with classical machine learning models. In Intelligent Data Analytics for Bioinformatics and Biomedical Systems (Wiley, 2024), pp. 67-92.",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=q2Oh69IAAAAJ&citation_for_view=q2Oh69IAAAAJ:u-x6o8ySG0sC"
+      "link": "https://onlinelibrary.wiley.com/doi/abs/10.1002/9781394270910.ch3"
     }
   ],
 
